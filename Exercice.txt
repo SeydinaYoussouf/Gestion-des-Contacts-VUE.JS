@@ -1,0 +1,68 @@
+================================================================================
+                    ÉNONCÉ : MINI-GESTION DE CONTACTS
+================================================================================
+
+Objectif : Créer une application Vue.js avec 2 composants.
+
+================================================================================
+                            ContactCard.vue
+================================================================================
+
+Composant qui affiche UN contact.
+
+Il doit :
+- Recevoir un objet "contact" (id, name, phone, email) via une prop
+- Afficher le téléphone et l'email
+- Permettre au parent d'injecter le nom via un slot
+- Avoir un bouton de suppression qui émet un événement avec l'id du contact
+
+================================================================================
+                              App.vue
+================================================================================
+
+Composant principal qui :
+
+- Contient une liste de contacts (2 contacts par défaut)
+- Affiche un formulaire (nom, téléphone, email) pour ajouter un contact
+- Affiche tous les contacts avec ContactCard
+- Supprime un contact quand on clique sur son bouton de suppression
+- Affiche le nombre total de contacts
+- Affiche un message si la liste est vide
+
+================================================================================
+                           CONTRAINTES TECHNIQUES
+================================================================================
+
+Obligatoire :
+- Utiliser les props (parent → enfant)
+- Utiliser les emits (enfant → parent)
+- Utiliser les slots
+- Utiliser la Composition API (<script setup>)
+
+================================================================================
+                         EXEMPLE DE RENDU ATTENDU
+================================================================================
+
+📞 Mes Contacts
+
+[Formulaire]
+Nom : [........]
+Téléphone : [........]
+Email : [........]
+[➕ Ajouter]
+
+┌─────────────────────────────────────┐
+│ Sophie Martin                       │
+│ 06 12 34 56 78                      │
+│ sophie@email.com               [✖] │
+└─────────────────────────────────────┘
+
+┌─────────────────────────────────────┐
+│ Thomas Dubois                       │
+│ 07 98 76 54 32                      │
+│ thomas@email.com               [✖] │
+└─────────────────────────────────────┘
+
+2 contact(s)
+
+================================================================================
