@@ -37,3 +37,46 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# Dépendances (très lourd, se reconstruit avec npm install)
+node_modules/
+jspm_packages/
+
+# Fichiers de build (générés automatiquement)
+dist/
+build/
+
+# Variables d'environnement et clés API ⚠️ TRÈS IMPORTANT
+.env
+.env.local
+.env.*.local
+
+# Fichiers de l'éditeur/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Fichiers du système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers de cache
+.cache/
+.eslintcache
+*.tmp
+*.temp
+
+
+node_modules/
+dist/
+.env
+.DS_Store
